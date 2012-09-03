@@ -177,6 +177,3 @@ jQuery ->
   updateOutput = -> $('#output').val( $('#input').val()[ $('input[name=type]:checked').val() ]() )
   $('#input').keyup updateOutput
   $('input[name=type]').click updateOutput
-  
-  console.log "proctor/rspec_formatter".camelize()
-  console.log "proctor/rspec_formatter".camelize(true)
