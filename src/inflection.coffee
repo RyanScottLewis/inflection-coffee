@@ -172,8 +172,3 @@ String::camelize = (lowercaseFirstLetter) ->
       str_arr[x] = str_arr[x].charAt(0).toUpperCase() + str_arr[x].substring(1)
     str_path[i] = str_arr.join('')
   str_path.join('::')
-
-jQuery ->
-  updateOutput = -> $('#output').val( $('#input').val()[ $('input[name=type]:checked').val() ]() )
-  $('#input').keyup updateOutput
-  $('input[name=type]').click updateOutput
